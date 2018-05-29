@@ -326,13 +326,13 @@ class OLERead
      */
     private static function getInt4d($data, $pos)
     {
-        if (trim($data) == '') {
-            // No data provided
-            throw new ReaderException('Parameter data is empty.');
-        } elseif ($pos < 0) {
-            // Invalid position
-            throw new ReaderException('Parameter pos=' . $pos . ' is invalid.');
-        }
+//        if (trim($data) == '') {
+//            // No data provided
+//            throw new ReaderException('Parameter data is empty.');
+//        } elseif ($pos < 0) {
+//            // Invalid position
+//            throw new ReaderException('Parameter pos=' . $pos . ' is invalid.');
+//        }
 
         $len = strlen($data);
         if ($len < $pos + 4) {
